@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sun Dec 30 19:20:41 2018
+# Process ID: 9768
+# Current directory: W:/Hardware/Homework/AXI_LCD
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12576 W:\Hardware\Homework\AXI_LCD\AXI_LCD.xpr
+# Log file: W:/Hardware/Homework/AXI_LCD/vivado.log
+# Journal file: W:/Hardware/Homework/AXI_LCD\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project W:/Hardware/Homework/AXI_LCD/AXI_LCD.xpr
+create_peripheral xilinx.com user AXI_LCD_IP_1230 1.0 -dir W:/Hardware/Homework/AXI_LCD/ip_repo
+add_peripheral_interface S00_AXI -interface_mode slave -axi_type lite [ipx::find_open_core xilinx.com:user:AXI_LCD_IP_1230:1.0]
+add_peripheral_interface M00_AXI -interface_mode master -axi_type full [ipx::find_open_core xilinx.com:user:AXI_LCD_IP_1230:1.0]
+generate_peripheral -driver -bfm_example_design -debug_hw_example_design [ipx::find_open_core xilinx.com:user:AXI_LCD_IP_1230:1.0]
+write_peripheral [ipx::find_open_core xilinx.com:user:AXI_LCD_IP_1230:1.0]
+set_property  ip_repo_paths  W:/Hardware/Homework/AXI_LCD/ip_repo/AXI_LCD_IP_1230_1.0 [current_project]
+update_ip_catalog -rebuild
+ipx::edit_ip_in_project -upgrade true -name edit_AXI_LCD_IP_1230_v1_0 -directory W:/Hardware/Homework/AXI_LCD/ip_repo w:/Hardware/Homework/AXI_LCD/ip_repo/AXI_LCD_IP_1230_1.0/component.xml
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+close_project
