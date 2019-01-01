@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Sun Dec 30 19:23:25 2018">
+<application name="pa" timeStamp="Tue Jan 01 00:08:47 2019">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="8df83a1bc6d441ba901cecc463108877" type="ProjectID"/>
 <property name="ProjectIteration" value="1" type="ProjectIteration"/>
@@ -17,12 +17,32 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
 </item>
 <item name="Java Command Handlers">
-<property name="NewProject" value="1" type="JavaHandler"/>
+<property name="EditDelete" value="5" type="JavaHandler"/>
+<property name="EditUndo" value="1" type="JavaHandler"/>
+<property name="IPPackagerWizardHandler" value="6" type="JavaHandler"/>
+<property name="NewProject" value="2" type="JavaHandler"/>
+<property name="OpenRSBHierarchyBlock" value="1" type="JavaHandler"/>
+<property name="ReportIPStatus" value="1" type="JavaHandler"/>
+<property name="ShowView" value="2" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="FINISH, Finish" value="1" type="GuiResourceData"/>
+<property name="NEXT, Next " value="4" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CmdMsgDialog_OK, OK" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, Create and Package IP..." value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GettingStartedView_RECENT_PROJECTS, W:/Hardware/Homework/AXI_LCD/AXI_LCD.xpr, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_REPORT, Report" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_TOOLS, Tools" value="2" type="GuiResourceData"/>
+<property name="PAResourceItoN.NewIpWizard_CREATE_NEW_AXI4_IP_CREATE_AXI4, Create a new AXI4 peripheral. Create an AXI4 IP, driver, software test application, IP Integrator AXI4 BFM simulation and debug demonstration design." value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.NewIpWizard_INTERFACE_MODE, Master, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.NewIpWizard_INTERFACE_TYPE, Full, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.NewIpWizard_OVERWRITE_EXISTING, Overwrite existing, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.NewIpWizard_VERIFY_PERIPHERAL_IP_USING_AXI4_BFM, Verify peripheral IP using AXI4 BFM Simulation interface" value="1" type="GuiResourceData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="6" type="GuiMode"/>
+<property name="GuiMode" value="12" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="5" type="TclMode"/>
+<property name="TclMode" value="11" type="TclMode"/>
 </item>
 </section>
 </application>
